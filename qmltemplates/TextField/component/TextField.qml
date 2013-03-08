@@ -1,6 +1,7 @@
 import QtQuick 1.0
 
 FocusScope {
+    id: container
 
     width: 220
     height: 28
@@ -29,8 +30,6 @@ FocusScope {
 //    }
 
     Column {
-        id: container
-
         spacing: 2
 
         width: 200
