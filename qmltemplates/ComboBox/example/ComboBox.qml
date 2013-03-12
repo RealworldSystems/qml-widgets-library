@@ -38,7 +38,7 @@ Rectangle {
         id: comboBox
         listModel: model
 
-        anchors { top: parent.top; left: parent.left }
+//        anchors { top: parent.top; left: parent.left }
 
         width: parent.width
         height: main.height/6

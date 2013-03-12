@@ -24,24 +24,9 @@ FocusScope {
         border.width: container.borderWidth
         border.color: container.borderColor
 
-        Image {
-            id: image
-            smooth: true
-            fillMode: Image.PreserveAspectFit
-            anchors.right: parent.right
-            anchors.top: parent.top
-            height: parent.height-2*container.margin
-            width: parent.height
-            anchors.topMargin: container.margin
-            anchors.bottomMargin: container.margin
-            anchors.leftMargin: container.margin
-            anchors.rightMargin: container.margin
-            source: container.source
-        }
-
         Item {
             anchors.left: parent.left
-            anchors.right: image.left
+            anchors.right: parent.right
             anchors.top: parent.top
             anchors.bottom: parent.bottom
             anchors.leftMargin: container.margin*2
@@ -67,7 +52,6 @@ FocusScope {
 
         states: State {
             name: "pressed"
-            PropertyChanges { target: image; scale: 0.7 }
         }
 
         Timer {

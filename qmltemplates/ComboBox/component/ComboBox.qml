@@ -18,7 +18,7 @@ FocusScope {
         id: comboBoxButton
         width: parent.width
         height: parent.height
-        source: "images/down.png"
+//        source: "images/down.png"
         borderColor: "#fff"
         radius: 10
         margin: 5
